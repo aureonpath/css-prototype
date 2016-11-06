@@ -1,0 +1,9 @@
+.mdl-layout__header{
+    background-color: #374857
+}
+
+@media (max-width: 839px) and (min-width: 480px){
+    .mdl-cell--8-col, .mdl-cell--8-col-tablet.mdl-cell--8-col-tablet {
+        width: 100%;
+    }
+}

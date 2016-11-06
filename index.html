@@ -1,7 +1,110 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <body>
-        <nav></nav>
-    </body>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-light_blue.min.css">
+    <link rel="stylesheet" href="assets/css/mdl-overwrite.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/objects.css">
+    <link rel="stylesheet" href="assets/css/utilities.css">
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header--row">
+                <div class="mdl-grid mdl-cell mdl-cell--10-col-desktop mdl-cell--1-offset-desktop u-no-margin u-no-padding">
+                    <!-- Profile component -->
+                    <div class="c-profile">
+                        <div class="c-profile__picture">
+                            <img class="c-profile__picture--img" src="assets/images/me.png" alt="Charles Olson">
+                        </div>
+                        <div class="c-profile__description">
+                            <div class="c-profile__name">Charles Olson</div>
+                            <div class="c-profile__cargo">Project Manager</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+            <div class=" mdl-grid u-no-margin u-no-padding">
+                <div class=" mdl-cell mdl-cell--10-col-desktop mdl-cell--1-offset-desktop mdl-cell--8-col-tablet u-no-margin u-no-padding">
+                    <div class="mdl-grid u-no-margin u-no-padding">
+                        <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet u-no-margin u-height--full">
+                            <div class="o-task o-task--shadow-right">
+                                <h1 class="o-task__title">Outphasing old products</h1>
+                                <p class="o-task__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat neque, accumsan quis nibh
+                                    tempus, ultricies finibus enim. Class aptent taciti sociosqu ad litora torquent per conubia
+                                    nostra, per inceptos himenaeos.</p>
+                                <p class="o-task__paragraph">Maecenas ullamcorper vestibulum nibh, et posuere lacus dictum vel. Nunc imperdiet lacinia
+                                    mi, eget commodo odio feugiat nec. Nam aliquam sem neque, <a href="#">maximus ullamcorper</a>                                    nulla molestie sed. Phasellus scelerisque risus vel fermentum lobortis. Vestibulum gravida
+                                    faucibus convallis.</p>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet u-no-margin u-height--full">
+                            <div class="o-evaluation">
+                                <button>Evaluate</button>
+                                <div class="o-evaluation__container">
+                                    <div class="c-slider">
+                                        <span class="c-slider__text c-slider__text--left"></span>
+                                        <span class="c-slider__text c-slider__text--right"></span>
+                                        <div class="c-slider__control">
+                                            <input class="c-slider__range" type="range" value="100" min="0" max="500">
+                                            <div class="c-slider__mask"></div>
+                                        </div>
+                                    </div>
+                                    <div class="o-evaluation__description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat neque, accumsan
+                                            quis nibh tempus, ultricies finibus enim. Class aptent taciti sociosqu ad litora
+                                            torquent per conubia nostra, per inceptos himenaeos.</p>
+                                        <div class="save-cancel-component">
+                                            <button>cancel</button>
+                                            <button>save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts-container">
+                                <button>invite</button>
+                                <ul class="media-object-list">
+                                    <li class="media-object-list-item">
+                                        <div class="media-object">
+                                            <div class="media-header">
+                                                <div class="profile-component">
+                                                    <div class="profile-pic">
+                                                        <img src="" alt="">
+                                                    </div>
+                                                    <div class="profile-desc">
+                                                        <div class="name">nombre</div>
+                                                        <div class="cargo">cargo</div>
+                                                        <div class="date">days ago</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="media-separator">
+                                            <div class="media-content">
+                                                contenido
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button>invite</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+</body>
+
 </html>
