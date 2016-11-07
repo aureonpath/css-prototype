@@ -31,48 +31,48 @@
                 </div>
             </div>
         </header>
-        <main class="mdl-layout__content">
+        <main role="main" class="mdl-layout__content">
             <div class=" mdl-grid u-no-margin u-no-padding">
                 <div class=" mdl-cell mdl-cell--10-col-desktop mdl-cell--1-offset-desktop mdl-cell--8-col-tablet u-no-margin u-no-padding">
                     <div class="mdl-grid u-no-margin u-no-padding">
                         <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet u-no-margin u-height--full">
                             <div class="o-task o-task--shadow-right">
-                                <h1 class="o-task__title">Outphasing old products</h1>
-                                <p class="o-task__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat neque, accumsan quis nibh
+                                <h1 role="heading" class="o-task__title">Outphasing old products</h1>
+                                <p role="text" class="o-task__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat neque, accumsan quis nibh
                                     tempus, ultricies finibus enim. Class aptent taciti sociosqu ad litora torquent per conubia
                                     nostra, per inceptos himenaeos.</p>
-                                <p class="o-task__paragraph">Maecenas ullamcorper vestibulum nibh, et posuere lacus dictum vel. Nunc imperdiet lacinia
-                                    mi, eget commodo odio feugiat nec. Nam aliquam sem neque, <a href="#">maximus ullamcorper</a>                                    nulla molestie sed. Phasellus scelerisque risus vel fermentum lobortis. Vestibulum gravida
+                                <p role="text" class="o-task__paragraph">Maecenas ullamcorper vestibulum nibh, et posuere lacus dictum vel. Nunc imperdiet lacinia
+                                    mi, eget commodo odio feugiat nec. Nam aliquam sem neque, <a role="link" href="#">maximus ullamcorper</a>                                    nulla molestie sed. Phasellus scelerisque risus vel fermentum lobortis. Vestibulum gravida
                                     faucibus convallis.</p>
                             </div>
                         </div>
                         <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet u-no-margin u-height--full">
                             <div class="o-evaluation">
-                                <button>Evaluate</button>
+                                <button role="button">Evaluate</button>
                                 <div class="o-evaluation__container">
                                     <div class="c-slider">
-                                        <span class="c-slider__text c-slider__text--left"></span>
-                                        <span class="c-slider__text c-slider__text--right"></span>
+                                        <span class="c-slider__text c-slider__text--left">Not reached</span>
+                                        <span class="c-slider__text c-slider__text--right">Exceeded</span>
                                         <div class="c-slider__control">
-                                            <input class="c-slider__range" type="range" value="100" min="0" max="500">
+                                            <input role="slider" class="c-slider__range" type="range" value="50" min="0" max="100">
                                             <div class="c-slider__mask"></div>
                                         </div>
                                     </div>
                                     <div class="o-evaluation__description">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat neque, accumsan
+                                        <p role="text" class="o-evaluation__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat neque, accumsan
                                             quis nibh tempus, ultricies finibus enim. Class aptent taciti sociosqu ad litora
                                             torquent per conubia nostra, per inceptos himenaeos.</p>
-                                        <div class="save-cancel-component">
-                                            <button>cancel</button>
-                                            <button>save</button>
+                                        <div class="c-save-cancel c-save-cancel--right">
+                                            <button role="button" class="mdl-button mdl-js-button mdl-js-ripple-effect">Cancel</button>
+                                            <button role="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">SAVE</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="contacts-container">
-                                <button>invite</button>
-                                <ul class="media-object-list">
-                                    <li class="media-object-list-item">
+                            <div class="o-contacts">
+                                <button role="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">INVITE</button>
+                                <ul role="list" class="media-object-list">
+                                    <li role="listitem" class="media-object-list-item">
                                         <div class="media-object">
                                             <div class="media-header">
                                                 <div class="profile-component">
@@ -93,7 +93,7 @@
                                         </div>
                                     </li>
                                 </ul>
-                                <button>invite</button>
+                                <button role="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">INVITE</button>
                             </div>
                         </div>
                     </div>

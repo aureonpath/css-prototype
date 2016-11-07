@@ -31,10 +31,25 @@
 
 
 .c-slider {
-  width: 100%;
+    width: 100%;
+    background-color: rgb(64,196,255);
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
+.c-slider__text{
+    color: #FFF;
+    display: inline-block;
+    margin: 5% 10%;
+} 
+.c-slider__text--left{
+    float: left;
+}
+.c-slider__text--right{
+    float: right;
 }
 .c-slider__control{
-    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
 }
 .c-slider__range {
   -webkit-appearance: none;
@@ -89,7 +104,7 @@
 }
 
 .c-slider__mask {
-  width: calc(100% - (22px));
+  width: calc(100% - (30px));
   height: 4px;
   border-radius: 5px;
   background: #FFF;
@@ -110,4 +125,12 @@
 }
 .c-slider__mask:after {
   float: right;
+}
+
+.c-save-cancel{
+    padding-top: 10px;
+    padding-bottom: 10px;
+} 
+.c-save-cancel--right{
+    text-align: right;
 }

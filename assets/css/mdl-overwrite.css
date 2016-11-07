@@ -2,8 +2,24 @@
     background-color: #374857
 }
 
+.mdl-button{
+    text-transform: none;
+    min-width: 90px;
+    font-size: 0.9em;
+    display: inline-block;
+}
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab{
+    color: #FFF;
+}
+
 @media (max-width: 839px) and (min-width: 480px){
     .mdl-cell--8-col, .mdl-cell--8-col-tablet.mdl-cell--8-col-tablet {
         width: 100%;
+    }
+}
+
+@media (max-width: 479px){
+    .mdl-cell {
+    width: 100%;
     }
 }
