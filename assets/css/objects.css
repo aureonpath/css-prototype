@@ -42,3 +42,33 @@
 .o-contacts{
     background-color: #e1ebf1;
 }
+.o-contacts__list{
+    list-style: none;
+    padding: 0;
+}
+
+.o-contacts__list__item{
+    padding: 5%
+}
+
+.o-contacts__card{
+    background-color: #FFF;
+    border-left: 6px solid #FFF;
+    padding: 4%;
+}
+
+.o-contacts__card--border-blue{
+    border-left: 6px solid #00F;
+}
+
+.o-contacts__card--border-red{
+    border-left: 6px solid #F00;
+}
+
+.o-contacts__card__paragraph{
+    font-size: 0.9em;
+    color:rgb(117, 117, 117);
+}
+.o-contacts__card__separator{
+    padding: 5%;
+}

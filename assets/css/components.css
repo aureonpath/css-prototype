@@ -20,6 +20,7 @@
     display: inline-block;
     margin-left: 2%;
     vertical-align: middle;
+    width: calc(100% - (68px));
 }
 .c-profile__name{
     font-size: 1em;
@@ -27,6 +28,12 @@
 
 .c-profile__cargo{
     font-size: 0.75em;
+    float: left
+}
+
+.c-profile__date{
+    font-size: 0.75em;
+    float: right;
 }
 
 
