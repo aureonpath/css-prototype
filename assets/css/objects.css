@@ -1,74 +1,89 @@
-.o-task{
+/*** Region Task object ***/
+
+.o-task {
     background-color: #f6f6f9;
     height: 100%;
     padding: 5% 10%;
     position: relative
 }
 
-.o-task--shadow-right{
-    -webkit-box-shadow: 4px 0px 8px -2px rgba(102,102,102,1);
-    -moz-box-shadow: 4px 0px 8px -2px rgba(102,102,102,1);
-    box-shadow: 4px 0px 8px -2px rgba(102,102,102,1);
+.o-task--shadow-right {
+    -webkit-box-shadow: 4px 0px 8px -2px rgba(102, 102, 102, 1);
+    -moz-box-shadow: 4px 0px 8px -2px rgba(102, 102, 102, 1);
+    box-shadow: 4px 0px 8px -2px rgba(102, 102, 102, 1);
 }
 
-.o-task__title{
+.o-task__title {
     font-size: 1.5em;
     font-weight: bold;
 }
 
-.o-task__paragraph{
+.o-task__paragraph {
     font-size: 1em;
-    color:rgb(117, 117, 117);
+    color: rgb(117, 117, 117);
 }
 
-.o-evaluation{
+
+/*** EndRegion Task object ***/
+
+
+/*** Region Evaluation object ***/
+
+.o-evaluation {
     background-color: #e1ebf1;
 }
 
-/*.o-evaluation__container{
-    background-color: rgb(64,196,255);
-}*/
-
-.o-evaluation__description{
+.o-evaluation__description {
     background-color: #FFF;
     padding: 5% 10%;
 }
 
-.o-evaluation__paragraph{
+.o-evaluation__paragraph {
     font-size: 0.9em;
-    color:rgb(117, 117, 117);
+    color: rgb(117, 117, 117);
 }
 
-.o-contacts{
+
+/*** EndRegion Evaluation object ***/
+
+
+/*** Region Contacts object ***/
+
+.o-contacts {
     background-color: #e1ebf1;
 }
-.o-contacts__list{
+
+.o-contacts__list {
     list-style: none;
     padding: 0;
 }
 
-.o-contacts__list__item{
+.o-contacts__list__item {
     padding: 5%
 }
 
-.o-contacts__card{
+.o-contacts__card {
     background-color: #FFF;
     border-left: 6px solid #FFF;
     padding: 4%;
 }
 
-.o-contacts__card--border-blue{
+.o-contacts__card--border-blue {
     border-left: 6px solid #00F;
 }
 
-.o-contacts__card--border-red{
+.o-contacts__card--border-red {
     border-left: 6px solid #F00;
 }
 
-.o-contacts__card__paragraph{
+.o-contacts__card__paragraph {
     font-size: 0.9em;
-    color:rgb(117, 117, 117);
+    color: rgb(117, 117, 117);
 }
-.o-contacts__card__separator{
+
+.o-contacts__card__separator {
     padding: 5%;
 }
+
+
+/*** EndRegion Contacts object ***/

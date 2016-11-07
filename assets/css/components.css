@@ -1,8 +1,8 @@
-.c-profile{
+.c-profile {
     width: 100%;
 }
 
-.c-profile__picture{
+.c-profile__picture {
     border-radius: 50%;
     display: inline-block;
     height: 50px;
@@ -11,131 +11,203 @@
     width: 50px;
 }
 
-.c-profile__picture--img{
+.c-profile__picture--img {
     max-width: 50px;
     max-height: 50px;
 }
 
-.c-profile__description{
+.c-profile__description {
     display: inline-block;
     margin-left: 10px;
     vertical-align: middle;
     width: calc(100% - (64px));
 }
-.c-profile__name{
+
+.c-profile__name {
     font-size: 1em;
 }
 
-.c-profile__cargo{
+.c-profile__cargo {
     font-size: 0.75em;
     float: left
 }
 
-.c-profile__date{
+.c-profile__date {
     font-size: 0.75em;
     float: right;
 }
 
-
 .c-slider {
     width: 100%;
-    background-color: rgb(64,196,255);
+    background-color: rgb(64, 196, 255);
     padding-top: 5%;
     padding-bottom: 15%;
 }
-.c-slider__text{
+
+.c-slider__text {
     color: #FFF;
     display: inline-block;
     margin: 5% 10%;
-} 
-.c-slider__text--left{
+}
+
+.c-slider__text--left {
     float: left;
 }
-.c-slider__text--right{
+
+.c-slider__text--right {
     float: right;
 }
-.c-slider__control{
+
+.c-slider__control {
     width: 80%;
     margin: 0 auto;
 }
-.c-slider__range {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 0px;
-  border-radius: 5px;
-  background-color: #40C4FF;
-  outline: none;
-  padding: 0;
-  margin: 0;
+
+ 
+
+input.c-slider__range[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+    
+    /*fix for FF unable to apply focus style bug */
+    /*border: 1px solid transparent;*/
+    
+    /*required for proper track sizing in FF*/
+    width: calc(100% - (30px));
+    margin: 0 auto;
+    display: block;
 }
-.c-slider__range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-          appearance: none;
-  -webkit-box-shadow: 0px 4px 8px -2px rgba(102,102,102,1);
-  box-shadow: 0px 4px 8px -2px rgba(102,102,102,1);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 4px solid #FFF;
-  background: #FF3340;
-  cursor: pointer;
-  -webkit-transition: background .15s ease-in-out;
-  transition: background .15s ease-in-out;
+input.c-slider__range[type=range]::-webkit-slider-runnable-track {
+    width: calc(100% - (30px));
+    height: 4px;
+    background: #FFF;
+    border: none;
+    border-radius: 3px;
+    margin: 0 auto;
 }
-.c-slider__range::-webkit-slider-thumb:hover {
-  background: #FF8088;
+input.c-slider__range[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;    
+    -webkit-box-shadow: 0px 4px 8px -2px rgba(102, 102, 102, 1);
+    box-shadow: 0px 4px 8px -2px rgba(102, 102, 102, 1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #FFF;
+    background: #FF3340;
+    cursor: pointer;
+    -webkit-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+    margin-top: -18px;
 }
-.c-slider__range:active::-webkit-slider-thumb {
-  background: #FF8088;
+input.c-slider__range[type=range]:focus {
+    outline: none;
+}
+input.c-slider__range[type=range]:focus::-webkit-slider-runnable-track {
+    background: #FFF;
 }
 
-.c-slider__range::-moz-range-thumb {
-  -moz-box-shadow: 0px 4px 8px -2px rgba(102,102,102,1);
-  box-shadow: 0px 4px 8px -2px rgba(102,102,102,1);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 4px solid #FFF;
-  background: #FF3340;
-  cursor: pointer;
-  -webkit-transition: background .15s ease-in-out;
-  transition: background .15s ease-in-out;
-}
-.c-slider__range::-moz-range-thumb:hover {
-  background: #FF8088;
-}
-.c-slider__range:active::-moz-range-thumb {
-  background: #FF8088;
+input.c-slider__range[type=range]::-webkit-slider-thumb:hover {
+    background: #FF8088;
 }
 
-.c-slider__mask {
-  width: calc(100% - (30px));
-  height: 4px;
-  border-radius: 5px;
-  background: #FFF;
-  outline: none;
-  padding: 0;
-  margin: 0 auto;
-  margin-top: -9px;
+input.c-slider__range[type=range]:active::-webkit-slider-thumb {
+    background: #FF8088;
 }
 
-.c-slider__mask:before, .c-slider__mask:after {
-  content: '';
-  height: 12px;
-  width: 12px;
-  border-radius: 10px;
-  float: left;
-  background: #FFF;
-  margin-top: -4px;
+input.c-slider__range[type=range]::-moz-range-track {
+    width: calc(100% - (30px));
+    height: 4px;
+    background: #FFF;
+    border: none;
+    border-radius: 3px;
+    margin: 0 auto;
 }
-.c-slider__mask:after {
-  float: right;
+input.c-slider__range[type=range]::-moz-range-thumb {
+    border: none;    
+    -moz-box-shadow: 0px 4px 8px -2px rgba(102, 102, 102, 1);
+    box-shadow: 0px 4px 8px -2px rgba(102, 102, 102, 1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #FFF;
+    background: #FF3340;
+    cursor: pointer;
+    -moz-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
 }
 
-.c-save-cancel{
+input.c-slider__range[type=range]::-moz-range-thumb:hover {
+    background: #FF8088;
+}
+
+input.c-slider__range[type=range]:active::-moz-range-thumb {
+    background: #FF8088;
+}
+
+/*hide the outline behind the border*/
+input.c-slider__range[type=range]:-moz-focusring{
+    /**outline: 1px solid white;**/
+    outline-offset: -1px;
+}
+
+input.c-slider__range[type=range]::-ms-track {
+    width: calc(100% - (30px));
+    height: 4px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+    
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 30px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+    margin: 0 auto;
+}
+input.c-slider__range[type=range]::-ms-fill-lower {
+    background: #FFF !important;
+    border-radius: 10px;
+}
+input.c-slider__range[type=range]::-ms-fill-upper {
+    background: #FFF !important;
+    border-radius: 10px;
+}
+input.c-slider__range[type=range]::-ms-thumb {
+    -ms-box-shadow: 0px 4px 8px -2px rgba(102, 102, 102, 1);
+    box-shadow: 0px 4px 8px -2px rgba(102, 102, 102, 1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #FFF;
+    background: #FF3340;
+    cursor: pointer;
+    -ms-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+}
+input.c-slider__range[type=range]:focus::-ms-fill-lower {
+    background: #FFF;
+}
+input.c-slider__range[type=range]:focus::-ms-fill-upper {
+    background: #FFF;
+}
+
+input.c-slider__range[type=range]::-ms-thumb:hover {
+    background: #FF8088;
+}
+
+input.c-slider__range[type=range]:active::-ms-thumb {
+    background: #FF8088;
+}
+
+.c-save-cancel {
     padding-top: 10px;
     padding-bottom: 10px;
-} 
-.c-save-cancel--right{
+}
+
+.c-save-cancel--right {
     text-align: right;
 }
