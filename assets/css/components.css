@@ -18,9 +18,9 @@
 
 .c-profile__description{
     display: inline-block;
-    margin-left: 2%;
+    margin-left: 10px;
     vertical-align: middle;
-    width: calc(100% - (68px));
+    width: calc(100% - (64px));
 }
 .c-profile__name{
     font-size: 1em;
@@ -61,17 +61,17 @@
 .c-slider__range {
   -webkit-appearance: none;
   width: 100%;
-  height: 4px;
+  height: 0px;
   border-radius: 5px;
-  background: rgba(0,0,0,0);
+  background-color: #40C4FF;
   outline: none;
   padding: 0;
   margin: 0;
 }
 .c-slider__range::-webkit-slider-thumb {
   -webkit-appearance: none;
+          appearance: none;
   -webkit-box-shadow: 0px 4px 8px -2px rgba(102,102,102,1);
-  -moz-box-shadow: 0px 4px 8px -2px rgba(102,102,102,1);
   box-shadow: 0px 4px 8px -2px rgba(102,102,102,1);
   width: 40px;
   height: 40px;
@@ -90,8 +90,6 @@
 }
 
 .c-slider__range::-moz-range-thumb {
-  -webkit-appearance: none;
-  -webkit-box-shadow: 0px 4px 8px -2px rgba(102,102,102,1);
   -moz-box-shadow: 0px 4px 8px -2px rgba(102,102,102,1);
   box-shadow: 0px 4px 8px -2px rgba(102,102,102,1);
   width: 40px;
