@@ -8,15 +8,15 @@ var myCaches = [staticCache];
 
 //Files to cache
 var files = [
-  '/',
-  '/index.html',
-  '/assets/css/normalize.css',
-  '/assets/css/mdl-overwrite.css',
-  '/assets/css/utilities.css',
-  '/assets/css/components.css',
-  '/assets/css/objects.css',
-  '/assets/js/main.js',
-  '/assets/images/me.png'
+  '../../',
+  '../../index.html',
+  '../css/normalize.css',
+  '../css/mdl-overwrite.css',
+  '../css/utilities.css',
+  '../css/components.css',
+  '../css/objects.css',
+  './main.js',
+  '../images/me.png'
 ];
 
 //Adding install event listener
