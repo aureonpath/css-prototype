@@ -68,6 +68,7 @@
 input.c-slider__range[type=range] {
     /*removes default webkit styles*/
     -webkit-appearance: none;
+    border-radius: 50%;
     
     /*fix for FF unable to apply focus style bug */
     /*border: 1px solid transparent;*/
@@ -210,4 +211,19 @@ input.c-slider__range[type=range]:active::-ms-thumb {
 
 .c-save-cancel--right {
     text-align: right;
+}
+
+.c-btn-container{
+    padding: 5%;
+}
+
+@media (max-width: 839px){
+    .c-btn-container__btn\@mobile{
+        width: 100%;
+        margin: 0%;
+        height: 50px;
+    }
+    .c-btn-container\@mobile{
+        padding: 2% 5% 5%;
+    }
 }

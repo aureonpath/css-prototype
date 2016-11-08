@@ -2,9 +2,8 @@
 
 .o-task {
     background-color: #f6f6f9;
-    height: 100%;
-    padding: 5% 10%;
-    position: relative
+    padding: 5% 2%;
+    position: relative;
 }
 
 .o-task--shadow-right {
@@ -23,6 +22,12 @@
     color: rgb(117, 117, 117);
 }
 
+@media (min-width: 840px){
+    .o-task\@desktop{
+        padding: 2% 5%;
+    }
+}
+
 
 /*** EndRegion Task object ***/
 
@@ -30,7 +35,7 @@
 /*** Region Evaluation object ***/
 
 .o-evaluation {
-    background-color: #e1ebf1;
+    background-color: transparent;
 }
 
 .o-evaluation__description {
@@ -42,8 +47,6 @@
     font-size: 0.9em;
     color: rgb(117, 117, 117);
 }
-
-
 /*** EndRegion Evaluation object ***/
 
 
@@ -55,11 +58,12 @@
 
 .o-contacts__list {
     list-style: none;
-    padding: 0;
+    padding: 0 5%;
+    margin: 0;
 }
 
 .o-contacts__list__item {
-    padding: 5%
+    margin-bottom: 5%;
 }
 
 .o-contacts__card {
@@ -85,5 +89,18 @@
     padding: 5%;
 }
 
+@media (max-width: 839px){
+    .o-contacts__list\@mobile {
+        padding: 0;
+        padding-top: 2%;
+    }
+    .o-contacts__list__item\@mobile {
+        margin: 1% 0;
+    }
+}
 
 /*** EndRegion Contacts object ***/
+
+.o-main{
+    background-color: #e1ebf1;
+}

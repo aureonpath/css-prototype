@@ -35,20 +35,20 @@
             <div class=" mdl-grid u-no-margin u-no-padding">
                 <div class=" mdl-cell mdl-cell--10-col-desktop mdl-cell--1-offset-desktop mdl-cell--8-col-tablet u-no-margin u-no-padding">
                     <div class="mdl-grid u-no-margin u-no-padding">
-                        <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet u-no-margin">
-                            <div class="o-task o-task--shadow-right">
-                                <h1 role="heading" class="o-task__title">Outphasing old products</h1>
-                                <p role="text" class="o-task__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat neque, accumsan quis nibh
-                                    tempus, ultricies finibus enim. Class aptent taciti sociosqu ad litora torquent per conubia
-                                    nostra, per inceptos himenaeos.</p>
-                                <p role="text" class="o-task__paragraph">Maecenas ullamcorper vestibulum nibh, et posuere lacus dictum vel. Nunc imperdiet lacinia
-                                    mi, eget commodo odio feugiat nec. Nam aliquam sem neque, <a role="link" href="#">maximus ullamcorper</a> nulla molestie sed. Phasellus scelerisque risus vel fermentum lobortis. Vestibulum gravida
-                                    faucibus convallis.</p>
-                            </div>
+                        <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet u-no-margin o-task o-task@desktop o-task--shadow-right">
+                            <h1 role="heading" class="o-task__title">Outphasing old products</h1>
+                            <p role="text" class="o-task__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat neque, accumsan quis nibh tempus,
+                                ultricies finibus enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                                per inceptos himenaeos.</p>
+                            <p role="text" class="o-task__paragraph">Maecenas ullamcorper vestibulum nibh, et posuere lacus dictum vel. Nunc imperdiet lacinia mi,
+                                eget commodo odio feugiat nec. Nam aliquam sem neque, <a role="link" href="#">maximus ullamcorper</a>                                nulla molestie sed. Phasellus scelerisque risus vel fermentum lobortis. Vestibulum gravida
+                                faucibus convallis.</p>
                         </div>
-                        <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet u-no-margin">
+                        <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet u-no-margin o-main">
                             <div class="o-evaluation">
-                                <button role="button">Evaluate</button>
+                                <div class="c-btn-container c-btn-container@mobile u-object--hidden@desktop">
+                                    <button role="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent c-btn-container__btn@mobile">EVALUATE</button>
+                                </div>
                                 <div class="o-evaluation__container">
                                     <div class="c-slider">
                                         <span class="c-slider__text c-slider__text--left">Not reached</span>
@@ -62,16 +62,18 @@
                                             quis nibh tempus, ultricies finibus enim. Class aptent taciti sociosqu ad litora
                                             torquent per conubia nostra, per inceptos himenaeos.</p>
                                         <div class="c-save-cancel c-save-cancel--right">
-                                            <button role="button" class="mdl-button mdl-js-button mdl-js-ripple-effect">Cancel</button>
-                                            <button role="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">SAVE</button>
+                                            <button role="button" class="mdl-button mdl-js-button">Cancel</button>
+                                            <button role="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">SAVE</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="o-contacts">
-                                <button role="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">INVITE</button>
-                                <ul role="list" class="o-contacts__list">
-                                    <li role="listitem" class="o-contacts__list__item">
+                                <div class="c-btn-container c-btn-container@mobile u-object--hidden@mobile">
+                                    <button role="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent c-btn-container__btn@mobile">INVITE</button>
+                                </div>
+                                <ul role="list" class="o-contacts__list o-contacts__list@mobile">
+                                    <li role="listitem" class="o-contacts__list__item o-contacts__list__item@mobile">
                                         <div class="o-contacts__card o-contacts__card--border-blue">
                                             <div class="c-profile">
                                                 <div class="c-profile__picture">
@@ -81,7 +83,7 @@
                                                     <div class="c-profile__name">Charles Olson</div>
                                                     <div class="c-profile__cargo">Project Manager</div>
                                                     <div class="mdl-layout-spacer"></div>
-                                                    <div class="c-profile__date"></div>
+                                                    <div class="c-profile__date">5 days ago</div>
                                                 </div>
                                             </div>
                                             <hr class="media-separator">
@@ -89,7 +91,7 @@
                                                 quis nibh tempus, ultricies finibus enim.</p>
                                         </div>
                                     </li>
-                                    <li role="listitem" class="o-contacts__list__item">
+                                    <li role="listitem" class="o-contacts__list__item o-contacts__list__item@mobile">
                                         <div class="o-contacts__card o-contacts__card--border-red">
                                             <div class="c-profile">
                                                 <div class="c-profile__picture">
@@ -107,7 +109,7 @@
                                                 quis nibh tempus, ultricies finibus enim.</p>
                                         </div>
                                     </li>
-                                    <li role="listitem" class="o-contacts__list__item">
+                                    <li role="listitem" class="o-contacts__list__item o-contacts__list__item@mobile">
                                         <div class="o-contacts__card o-contacts__card">
                                             <div class="c-profile">
                                                 <div class="c-profile__picture">
@@ -126,7 +128,9 @@
                                         </div>
                                     </li>
                                 </ul>
-                                <button role="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">INVITE</button>
+                                <div class="c-btn-container c-btn-container@mobile u-object--hidden@desktop">
+                                    <button role="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent c-btn-container__btn@mobile">INVITE</button>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -52,3 +52,15 @@
 .u-height--full{
     height: 100%;
 }
+
+@media (min-width: 840px){
+    .u-object--hidden\@desktop{
+        display: none;
+    }
+}
+
+@media (max-width: 839px){
+    .u-object--hidden\@mobile{
+        display: none;
+    }
+}
