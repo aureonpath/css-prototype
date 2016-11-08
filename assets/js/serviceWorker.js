@@ -1,5 +1,5 @@
 //Cache polyfil to support cacheAPI in all browsers
-importScripts('./assets/js/cache-polyfill.js');
+importScripts('cache-polyfill.js');
 
 var staticCache = 'static-v1';
 
