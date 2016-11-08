@@ -1,7 +1,21 @@
 /** Region profile component **/
 
 .c-profile {
-    width: 100%;
+    width: calc(100% - (62px));
+}
+
+.c-profile__btn{
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    border-width: 0;
+    color: #FFF;
+    cursor: pointer;
+    margin: 0;
+    max-height: 27px;
+    max-width: 24px;
+    padding: 0;
+    vertical-align: top;
 }
 
 .c-profile__picture {
