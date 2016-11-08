@@ -164,11 +164,10 @@
       navigator.serviceWorker
         .register('serviceWorker.js') //Point to serviceWorker file
         .then(function (registration) {
-          document.getElementById('sw-register-state').textContent = '✓';
+          console.log('ServiceWorker registration success');
         })
         .catch(function (error) {
           console.log('ServiceWorker registration failed: ', error);
-          document.getElementById('sw-register-state').textContent = '✕'; //Failed to register
         });
     }
   </script>
