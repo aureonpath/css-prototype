@@ -158,6 +158,20 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
         crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+    //If serviceWorker supports, then register it.
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('serviceworker.js') //Point to serviceWorker file
+        .then(function (registration) {
+          document.getElementById('sw-register-state').textContent = '✓';
+        })
+        .catch(function (error) {
+          console.log('ServiceWorker registration failed: ', error);
+          document.getElementById('sw-register-state').textContent = '✕'; //Failed to register
+        });
+    }
+  </script>
 </body>
 
 </html>
