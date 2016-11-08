@@ -7,7 +7,7 @@
 
 # PWA
 
-* For deploy the PWA just open it in chrome for android
+* For deploy the PWA just open it in chrome (not incognito) for android
 * go to https://aureonpath.github.io/css-prototype
 * click on the browser's context menu
 * click on "Add to desktop"
