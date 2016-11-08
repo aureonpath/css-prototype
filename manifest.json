@@ -1,20 +1,21 @@
 {
-  "short_name": "My PWA",
-  "name": "PWA for Haufe",
+  "lang": "en",
+  "short_name": "CSS-Proto",
+  "name": "CSS-Prototype PWA",
   "icons": [
     {
-      "src": "launcher-icon-2x.png",
+      "src": "images/icons/rsz_full-circle_36.png",
+      "sizes": "36x36",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/rsz_full-circle_64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/rsz_full-circle_96.png",
       "sizes": "96x96",
-      "type": "image/png"
-    },
-    {
-      "src": "launcher-icon-3x.png",
-      "sizes": "144x144",
-      "type": "image/png"
-    },
-    {
-      "src": "launcher-icon-4x.png",
-      "sizes": "192x192",
       "type": "image/png"
     }
   ],
