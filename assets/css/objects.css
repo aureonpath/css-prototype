@@ -7,9 +7,9 @@
 }
 
 .o-task--shadow-right {
-    -webkit-box-shadow: 4px 0px 8px -2px rgba(102, 102, 102, 1);
-    -moz-box-shadow: 4px 0px 8px -2px rgba(102, 102, 102, 1);
-    box-shadow: 4px 0px 8px -2px rgba(102, 102, 102, 1);
+    -webkit-box-shadow: 4px 0 8px -2px rgba(102, 102, 102, 1);
+    -moz-box-shadow: 4px 0 8px -2px rgba(102, 102, 102, 1);
+    box-shadow: 4px 0 8px -2px rgba(102, 102, 102, 1);
 }
 
 .o-task__title {
