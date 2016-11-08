@@ -4,17 +4,17 @@
   "name": "CSS-Prototype PWA",
   "icons": [
     {
-      "src": "images/icons/rsz_full-circle_36.png",
+      "src": "/assets/images/icons/rsz_full-circle_36.png",
       "sizes": "36x36",
       "type": "image/png"
     },
     {
-      "src": "images/icons/rsz_full-circle_64.png",
+      "src": "/assets/images/icons/rsz_full-circle_64.png",
       "sizes": "64x64",
       "type": "image/png"
     },
     {
-      "src": "images/icons/rsz_full-circle_96.png",
+      "src": "/assets/images/icons/rsz_full-circle_96.png",
       "sizes": "96x96",
       "type": "image/png"
     }
