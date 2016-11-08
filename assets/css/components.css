@@ -1,3 +1,5 @@
+/** Region profile component **/
+
 .c-profile {
     width: 100%;
 }
@@ -37,6 +39,20 @@
     float: right;
 }
 
+.c-profile--header-bar{
+    padding: 10px 0;
+}
+
+@media (max-width: 839px){
+    .c-profile--header-bar\@mobile{
+        padding-left: 5%;
+    }
+}
+
+/** EndRegion profile component **/
+
+/** Region slider component **/
+
 .c-slider {
     width: 100%;
     background-color: rgb(64, 196, 255);
@@ -63,17 +79,9 @@
     margin: 0 auto;
 }
 
- 
-
 input.c-slider__range[type=range] {
-    /*removes default webkit styles*/
     -webkit-appearance: none;
     border-radius: 50%;
-    
-    /*fix for FF unable to apply focus style bug */
-    /*border: 1px solid transparent;*/
-    
-    /*required for proper track sizing in FF*/
     width: calc(100% - (30px));
     margin: 0 auto;
     display: block;
@@ -146,9 +154,7 @@ input.c-slider__range[type=range]:active::-moz-range-thumb {
     background: #FF8088;
 }
 
-/*hide the outline behind the border*/
 input.c-slider__range[type=range]:-moz-focusring{
-    /**outline: 1px solid white;**/
     outline-offset: -1px;
 }
 
@@ -204,6 +210,9 @@ input.c-slider__range[type=range]:active::-ms-thumb {
     background: #FF8088;
 }
 
+/** EndRegion slider component **/
+
+/** Region save-cancel component **/
 .c-save-cancel {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -212,6 +221,10 @@ input.c-slider__range[type=range]:active::-ms-thumb {
 .c-save-cancel--right {
     text-align: right;
 }
+
+/** EndRegion save-cancel component **/
+
+/** Region generic button component **/
 
 .c-btn-container{
     padding: 5%;
@@ -227,3 +240,5 @@ input.c-slider__range[type=range]:active::-ms-thumb {
         padding: 2% 5% 5%;
     }
 }
+
+/** EndRegion generic button component **/

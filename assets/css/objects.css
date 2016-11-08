@@ -47,6 +47,11 @@
     font-size: 0.9em;
     color: rgb(117, 117, 117);
 }
+
+.o-evaluation__container{
+    margin-bottom: 2%;
+}
+
 /*** EndRegion Evaluation object ***/
 
 
@@ -92,7 +97,6 @@
 @media (max-width: 839px){
     .o-contacts__list\@mobile {
         padding: 0;
-        padding-top: 2%;
     }
     .o-contacts__list__item\@mobile {
         margin: 1% 0;
@@ -101,6 +105,11 @@
 
 /*** EndRegion Contacts object ***/
 
+
+/*** Region main object ***/
 .o-main{
     background-color: #e1ebf1;
+    border-right: 2px solid #e1ebf1
 }
+
+/*** EndRegion main object ***/

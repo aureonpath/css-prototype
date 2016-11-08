@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-light_blue.min.css">
     <link rel="stylesheet" href="assets/css/mdl-overwrite.css">
@@ -18,7 +18,7 @@
             <div class="mdl-layout__header--row">
                 <div class="mdl-grid mdl-cell mdl-cell--10-col-desktop mdl-cell--1-offset-desktop u-no-margin u-no-padding">
                     <!-- Profile component -->
-                    <div class="c-profile">
+                    <div class="c-profile c-profile--header-bar c-profile--header-bar@mobile">
                         <div class="c-profile__picture">
                             <img role="img" class="c-profile__picture--img" src="assets/images/me.png" alt="Charles Olson">
                         </div>
@@ -47,9 +47,9 @@
                         <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet u-no-margin o-main">
                             <div class="o-evaluation">
                                 <div class="c-btn-container c-btn-container@mobile u-object--hidden@desktop">
-                                    <button role="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent c-btn-container__btn@mobile">EVALUATE</button>
+                                    <button id="evaluate-btn" role="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent c-btn-container__btn@mobile">EVALUATE</button>
                                 </div>
-                                <div class="o-evaluation__container">
+                                <div id="evaluation-container" class="o-evaluation__container u-object--hidden@mobile">
                                     <div class="c-slider">
                                         <span class="c-slider__text c-slider__text--left">Not reached</span>
                                         <span class="c-slider__text c-slider__text--right">Exceeded</span>
@@ -142,6 +142,9 @@
     </div>
 
     <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
