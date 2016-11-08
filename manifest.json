@@ -20,6 +20,12 @@
       "sizes": "96x96",
       "type": "image/png",
       "density": 2.0
+    },
+    {
+      "src": "assets/images/rsz_full-circle_192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": 4.0
     }
   ],
   "theme_color": "#9E9E9E",
