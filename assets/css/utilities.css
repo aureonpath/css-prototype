@@ -1,3 +1,4 @@
+/** Region dimension **/
 .u-no-margin{
     margin: 0;
 }
@@ -53,6 +54,11 @@
     height: 100%;
 }
 
+/** EndRegion dimension **/
+
+
+/** Region visibility **/
+
 @media (min-width: 840px){
     .u-object--hidden\@desktop{
         display: none;
@@ -64,3 +70,6 @@
         display: none;
     }
 }
+
+
+/** EndRegion visibility **/
