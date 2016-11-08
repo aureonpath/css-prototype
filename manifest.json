@@ -4,21 +4,26 @@
   "name": "CSS-Prototype PWA",
   "icons": [
     {
-      "src": "/assets/images/icons/rsz_full-circle_36.png",
+      "src": "assets/images/icons/rsz_full-circle_36.png",
       "sizes": "36x36",
-      "type": "image/png"
+      "type": "image/png",
+      "density": 0.75
     },
     {
-      "src": "/assets/images/icons/rsz_full-circle_64.png",
+      "src": "assets/images/icons/rsz_full-circle_64.png",
       "sizes": "64x64",
-      "type": "image/png"
+      "type": "image/png",
+      "density": 1.25
     },
     {
-      "src": "/assets/images/icons/rsz_full-circle_96.png",
+      "src": "assets/images/icons/rsz_full-circle_96.png",
       "sizes": "96x96",
-      "type": "image/png"
+      "type": "image/png",
+      "density": 2.0
     }
   ],
+  "theme_color": "#9E9E9E",
+  "background_color": "#9E9E9E",
   "start_url": "index.html",
   "display": "standalone",
   "orientation": "portrait"
