@@ -2,7 +2,7 @@
 
 .o-task {
     background-color: #f6f6f9;
-    padding: 5% 2%;
+    padding: 5%;
     position: relative;
 }
 
@@ -91,7 +91,8 @@
 }
 
 .o-contacts__card__separator {
-    padding: 5%;
+    margin: 3% auto;
+    width: 95%;
 }
 
 @media (max-width: 839px){
